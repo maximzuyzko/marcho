@@ -1,3 +1,48 @@
+body {
+  font-family: "Quicksand-Medium", "Tahoma", sans-serif;
+  font-weight: 500;
+}
+
+.menu__list-link {
+  font-family: "Roboto-Regular", "Tahoma", sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Quicksand-Medium", "Tahoma", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: local("Quicksand-Medium"), url("../fonts/Quicksand-Medium.woff2") format("woff2"), url("../fonts/Quicksand-Medium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand-Regular", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Quicksand-Regular"), url("../fonts/Quicksand-Regular.woff2") format("woff2"), url("../fonts/Quicksand-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Bold", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Roboto-Bold"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Medium", "Tahoma", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: local("Roboto-Medium"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Regular", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-display: swap;
+}
 html {
   box-sizing: border-box;
 }
@@ -55,6 +100,75 @@ address {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #8d8d8d;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 40px 0;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__list-item:not(:last-child) {
+  margin-right: 35px;
+}
+.menu__list-link {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #29282d;
+  padding-bottom: 3px;
+  transition: color 0.5s ease;
+}
+.menu__list-link:hover {
+  font-weight: 700;
+  color: #fe3e57;
+  border-bottom: 1px solid #fe3e57;
+}
+.menu__list-link--active {
+  font-weight: 700;
+  color: #fe3e57;
+  border-bottom: 1px solid #fe3e57;
+}
+
+.user-nav {
+  display: flex;
+}
+.user-nav__link {
+  position: relative;
+}
+.user-nav__num {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fe3e57;
+  top: -9px;
+  right: -13px;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 20px;
+}
+.user-nav__link:not(:last-child) {
+  margin-right: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
