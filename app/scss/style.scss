@@ -791,6 +791,12 @@
     margin-top: 12px;
     color: $accent;
   }
+
+  &__text {
+    p {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 @import "media";
