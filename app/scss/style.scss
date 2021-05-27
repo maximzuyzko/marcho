@@ -799,4 +799,36 @@
   }
 }
 
+.page-404 {
+  padding: 110px 0 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    max-width: 570px;
+  }
+
+  &__title {
+    color: #28384f;
+    margin-bottom: 40px;
+  }
+  &__text {
+    margin-bottom: 55px;
+  }
+  &__link {
+    padding: 14px 35px;
+    @extend %btn;
+    transition: all .3s;
+
+    &:hover {
+      color: $accent;
+      background-color: $white;
+    }
+  }
+}
+
+
+
 @import "media";
