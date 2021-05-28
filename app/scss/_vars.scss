@@ -7,10 +7,26 @@ $white: #fff;
 %btn {
   padding: 12px 26px;
   background-color: $accent;
-  color: #FFFFFF;
+  color: $white;
+  border: none;
+  cursor: pointer;
   text-transform: uppercase;
   @extend  %roboto-400;
   box-shadow: 0 7px 20px 0 rgba(255, 17, 48, 0.3);
+  transition: all .4s;
+
+  &:hover {
+    color: $accent;
+    background-color: $white;
+  }
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
 
 %quicksand-400 {
